@@ -19,6 +19,17 @@ a:active {
   outline: none;
 }
 
+:root{
+	--primary-text-color: #303030;
+	--primary-text-light:#555555;
+	--inverted-text-color:#FFFFFF;
+	--secondary-transparent-text:rgba(157, 164, 189, 0.6);
+	--secondary-text-color:#9DA4BD;
+	--primary-backround-color:#FFFFFF;
+	--secondary-backrround-color:#F7F7F7;
+	--brand-color:#ff6c00;
+}
+
 nav,
 footer,
 header,
@@ -81,11 +92,38 @@ h6 {
 body {
   font-family: 'Open Sans';
   font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.85;
+  background-color: var(--primary-backround-color);
 }
 
 aside {
   width: 155px;
   height: 680px;
+}
+
+.section {
+	padding: 0px 15px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.section-subtitle {
+	font-family: 'Raleway';
+	font-size: 42px;
+	line-height: 49px;
+	letter-spacing: 0.05em;
+	color: var(--primary-text-color);
+}
+
+.upper-description {
+	font-weight: 600;
+	font-size: 11px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--primary-text-color) ;
 }
 
 .first-page {
@@ -100,58 +138,113 @@ aside {
 }
 
 /* navigation */
-
-.nav {
-  display: inline-block;
-}
-
-.nav-list {
-  display: inline-block;
-  margin: 52px 312px 0px 40px;
-}
-
-.nav-item {
-  display: inline-block;
-  margin-right: 40px;
-}
+ 
 
 .nav-link {
-  color: white;
+  color: var(--primary-text-color);
 }
 
 .nav-link:hover {
-  color: #ff6c00;
+  color: var(--brand-color);
 }
 
 /* address list */
 
-.address {
-  display: inline-block;
-}
-
-.address-list {
-  display: inline-block;
-}
-
-.address-item {
-  display: inline-block;
-}
 
 .address-link {
   text-transform: uppercase;
-  color: white;
+  color: var(--inverted-text-color);
   margin-right: 40px;
+  font-weight: 600;
+	font-size: 12px;
+	line-height: 16px;
 }
 
-.address-link1 {
-  color: white;
-  padding: 12px 20px 12px 20px;
-  border: 1px solid #ff6c00;
-  border-radius: 25px;
-}
-
-button {
-  background: none;
-}
+.button {
+	color: var(--inverted-text-color);
+	padding: 12px 20px 12px 20px;
+	border: 1px solid var(--brand-color);
+	border-radius: 25px;
+	font-weight: 600;
+	background-color: transparent;
+ }
 
 /* hero section */
+
+
+/* second section */
+.section-description {
+	font-size: 18px;
+	line-height: 1.67;
+	letter-spacing: 0.02em;
+	color: var(--primary-text-light);
+}
+
+.about-us{
+	line-height: 1.86;
+	letter-spacing: 0.02em;
+	color: var(--primary-text-light);
+}
+
+.section button{
+	color: var(--primary-text-color);
+}  
+.image-list {
+}
+.image-item {
+	
+}
+.image-process {
+	width: 270px;
+	height: 445px;
+}
+
+/* Service and prices	*/
+
+.service-item{
+	font-size: 18px;
+	line-height: 1.67;
+	letter-spacing: 0.02em;
+	color: #9DA4BD;
+}
+
+/* Third section*/
+.recomendations{
+	
+	font-size: 18px;
+	line-height: 1.67;
+	letter-spacing: 0.02em;
+	color: var(--primary-text-light);
+}
+
+/*	Fourth section	*/
+
+.master-name{
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	letter-spacing: 0.02em;
+}
+
+.master-position{
+	line-height: 19px;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: var(--brand-color);
+}
+
+
+
+/* Форма */
+
+.form h3{
+	color: var(--inverted-text-color);
+}
+
+.username{
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 15px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}

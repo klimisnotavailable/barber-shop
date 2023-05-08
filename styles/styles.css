@@ -92,8 +92,7 @@ h6 {
 body {
   font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
+ 
   line-height: 1.85;
   background-color: var(--primary-backround-color);
 }
@@ -134,14 +133,28 @@ aside {
 .head-section {
   background: url(../images/header_background_hero_section.jpg);
   width: 1125px;
-  height: 680px;
+}
+
+.header{
+	display: flex;
+	justify-content: space-between;
 }
 
 /* navigation */
- 
 
+.nav-item{
+	padding: 42px 0px 42px 0px;
+}
+
+.nav-list{
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+ 
 .nav-link {
-  color: var(--primary-text-color);
+  color: var(--inverted-text-color);
+  display: inline-block;
 }
 
 .nav-link:hover {
@@ -150,17 +163,26 @@ aside {
 
 /* address list */
 
-
-.address-link {
-  text-transform: uppercase;
-  color: var(--inverted-text-color);
-  margin-right: 40px;
-  font-weight: 600;
-	font-size: 12px;
-	line-height: 16px;
+.address-list{
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	margin-right: 55px;
 }
 
-.button {
+.address-item{
+	display: inline-block;
+	padding: 42px 0px 42px 0px;
+}
+
+.address-link {
+	color: var(--inverted-text-color);
+	font-size: 12px;
+	line-height: 16px;
+	background: none;
+}
+
+.button-white {
 	color: var(--inverted-text-color);
 	padding: 12px 20px 12px 20px;
 	border: 1px solid var(--brand-color);
@@ -168,8 +190,32 @@ aside {
 	font-weight: 600;
 	background-color: transparent;
  }
-
 /* hero section */
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.hero-title {
+	font-family: 'Raleway';
+	font-size: 72px;
+	line-height: 85px;
+	letter-spacing: 0.05em;
+	color: var(--inverted-text-color);
+}
+
+.hero-description {
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: 0.02em;
+	color: var(--secondary-text-color);
+}
+
+.flip-button {
+	display: flex;
+}
 
 
 /* second section */
@@ -186,9 +232,6 @@ aside {
 	color: var(--primary-text-light);
 }
 
-.section button{
-	color: var(--primary-text-color);
-}  
 .image-list {
 }
 .image-item {
@@ -199,6 +242,14 @@ aside {
 	height: 445px;
 }
 
+.button{
+	color: var(--primary-text-color);
+	padding: 12px 20px 12px 20px;
+	border: 1px solid var(--brand-color);
+	border-radius: 25px;
+	font-weight: 600;
+	background-color: transparent;
+}
 /* Service and prices	*/
 
 .service-item{
@@ -210,7 +261,6 @@ aside {
 
 /* Third section*/
 .recomendations{
-	
 	font-size: 18px;
 	line-height: 1.67;
 	letter-spacing: 0.02em;

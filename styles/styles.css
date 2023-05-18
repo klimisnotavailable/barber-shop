@@ -61,6 +61,9 @@ input::-ms-clear {
 button {
   cursor: pointer;
 }
+button:hover {
+  background-color: var(--brand-color);
+}
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
@@ -407,6 +410,10 @@ aside {
 }
 
 .achievements {
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.02em;
   width: 170px;
   height: 133px;
   background: var(--secondary-background-color);
@@ -427,6 +434,18 @@ aside {
   background: var(--secondary-background-color);
 }
 
+.masters-section > .upper-description {
+  color: var(--primary-text-color);
+  padding-top: 130px;
+  margin-left: 55px;
+}
+
+.masters-section h2 {
+  margin-top: 20px;
+  margin-left: 55px;
+  margin-bottom: 44px;
+}
+
 .masters-list {
   display: flex;
   gap: 30px;
@@ -438,6 +457,8 @@ aside {
 }
 
 .masters-image {
+  width: 370px;
+  height: 346px;
 }
 
 .master-name {
@@ -457,6 +478,26 @@ aside {
   color: var(--brand-color);
 }
 
+.social-list {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+  margin-left: 72px;
+}
+
+.social-item {
+  display: flex;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--primary-backround-color);
+}
+
+.social-link {
+  align-self: center;
+  background-color: var(--primary-backround-color);
+}
 /* work section*/
 
 .work-section {
@@ -465,6 +506,8 @@ aside {
 }
 
 .work-section p {
+  margin-top: 130px;
+  margin-left: 55px;
   line-height: 15px;
   color: var(--primary-text-color);
 }

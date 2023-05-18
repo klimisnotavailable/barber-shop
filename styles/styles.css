@@ -93,6 +93,7 @@ h6 {
 }
 
 /*--------------------*/
+
 body {
   font-family: 'Open Sans';
   font-style: normal;
@@ -185,6 +186,10 @@ aside {
   background: none;
 }
 
+.address-link:hover {
+  background: none;
+}
+
 .button-white {
   color: var(--inverted-text-color);
   padding: 12px 20px 12px 20px;
@@ -193,6 +198,7 @@ aside {
   font-weight: 600;
   background-color: transparent;
 }
+
 /* hero section */
 
 .hero {
@@ -244,6 +250,7 @@ aside {
 }
 
 /* second section */
+
 .about-us-section {
   display: flex;
   flex-direction: row;
@@ -298,6 +305,7 @@ aside {
 }
 
 /* Service and prices	*/
+
 .price-titles p {
   color: var(--secondary-transparent-text);
 }
@@ -498,6 +506,7 @@ aside {
   align-self: center;
   background-color: var(--primary-backround-color);
 }
+
 /* work section*/
 
 .work-section {
@@ -511,6 +520,16 @@ aside {
   line-height: 15px;
   color: var(--primary-text-color);
 }
+
+.work-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 44px;
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-bottom: 130px;
+}
+
 /* Форма */
 
 .form-and-contacts {
@@ -628,12 +647,27 @@ aside {
   color: var(--inverted-text-color);
 }
 
-.down-contacts p {
+.down-contacts > .upper-description {
+  font-style: normal;
+  line-height: 15px;
+  margin-top: 70px;
+  margin-left: 181px;
+}
+
+.work-time {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+  margin-top: 20px;
+  margin-left: 100px;
 }
 
 /* footer */
 
 .footer {
+  display: flex;
   width: 1280px;
   height: 127px;
   color: var(--secondary-background-color);
@@ -641,7 +675,6 @@ aside {
 
 .footer-socials {
   display: flex;
-
   gap: 40px;
   width: 15px;
   height: 270px;

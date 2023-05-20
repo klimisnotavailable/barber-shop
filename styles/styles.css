@@ -24,6 +24,7 @@ a:active {
   --primary-text-light: #555555;
   --inverted-text-color: #ffffff;
   --secondary-transparent-text: rgba(157, 164, 189, 0.6);
+  --third-transparent-text: rgba(157, 164, 189, 0.4);
   --secondary-text-color: #9da4bd;
   --primary-backround-color: #ffffff;
   --secondary-background-color: #f7f7f7;
@@ -60,9 +61,6 @@ input::-ms-clear {
 }
 button {
   cursor: pointer;
-}
-button:hover {
-  background-color: var(--brand-color);
 }
 button::-moz-focus-inner {
   padding: 0;
@@ -121,7 +119,26 @@ aside {
   color: var(--primary-text-color);
 }
 
+.upper-description::before {
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+  content: '';
+}
+
+.upper-description-light::before {
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: var(--secondary-transparent-text);
+  content: '';
+}
+
 .upper-description {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   font-weight: 600;
   font-size: 11px;
   letter-spacing: 0.1em;
@@ -144,6 +161,10 @@ aside {
   justify-content: space-between;
 }
 
+.button:hover,
+.button-white:hover {
+  background-color: var(--brand-color);
+}
 /* navigation */
 
 .nav-item {
@@ -226,6 +247,10 @@ aside {
   color: var(--secondary-text-color);
 }
 
+.upper-description-light {
+  color: var(--secondary-transparent-text);
+}
+
 .flip-button {
   font-weight: 600;
   font-size: 11px;
@@ -237,6 +262,10 @@ aside {
 
 .flip-button:disabled {
   color: var(--secondary-text-color);
+}
+
+.flip-button:hover {
+  color: var(--brand-color);
 }
 
 .carousel-buttons {
@@ -408,6 +437,15 @@ aside {
   flex-direction: row;
 }
 
+.achievements-list-left {
+  margin-top: 121px;
+}
+
+.achievements-list-right {
+  margin-top: 156px;
+  margin-right: 130px;
+}
+
 .achievements-list h2 {
   font-weight: 700;
   font-size: 42px;
@@ -418,10 +456,13 @@ aside {
 }
 
 .achievements {
-  font-size: 18px;
-  line-height: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
   text-align: center;
-  letter-spacing: 0.02em;
   width: 170px;
   height: 133px;
   background: var(--secondary-background-color);
@@ -446,6 +487,8 @@ aside {
   color: var(--primary-text-color);
   padding-top: 130px;
   margin-left: 55px;
+  width: 380px;
+  height: 15px;
 }
 
 .masters-section h2 {
@@ -507,6 +550,19 @@ aside {
   background-color: var(--primary-backround-color);
 }
 
+.social-link:hover {
+  fill: var(--brand-color);
+}
+
+.social-icon {
+  display: flex;
+  align-self: center;
+}
+
+.social-icon:hover {
+  color: var(--brand-color);
+}
+
 /* work section*/
 
 .work-section {
@@ -542,8 +598,6 @@ aside {
 }
 
 .form {
-  gap: 44px;
-  margin: 130px 139px 193px 55px;
 }
 
 .form h3 {
@@ -595,7 +649,7 @@ aside {
   line-height: 15px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--secondary-transparent-text);
+  color: var(--third-transparent-text);
   width: 560px;
   height: 76px;
   margin-bottom: 44px;
@@ -604,6 +658,7 @@ aside {
 .down-contacts {
   width: 625px;
   height: 644px;
+  border: 1px solid var(--primary-backround-color);
 }
 
 .down-contacts h3 {
@@ -643,15 +698,12 @@ aside {
   color: var(--secondary-text-color);
 }
 
-.upper-description {
-  color: var(--inverted-text-color);
-}
-
 .down-contacts > .upper-description {
   font-style: normal;
   line-height: 15px;
   margin-top: 70px;
-  margin-left: 181px;
+  margin-left: 100px;
+  color: var(--inverted-text-color);
 }
 
 .work-time {

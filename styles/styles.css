@@ -149,6 +149,8 @@ aside {
   color: var(--primary-text-color);
 }
 
+/* first page */
+
 .first-page {
   display: flex;
   flex-direction: row-reverse;
@@ -794,4 +796,11 @@ aside {
   margin-bottom: 56px;
   margin-left: 55px;
   color: var(--secondary-text-color);
+}
+
+.social-media-item {
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--primary-text-color);
 }

@@ -158,6 +158,8 @@ aside {
 
 .head-section {
   background: url(../images/header_background_hero_section.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
   width: 1125px;
 }
 
@@ -315,6 +317,15 @@ aside {
   top: 616px;
 }
 
+.social-media {
+  position: absolute;
+  left: -20px;
+  display: flex;
+  gap: 20px;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+}
+
 /* second section */
 
 .about-us-section {
@@ -390,9 +401,19 @@ aside {
 .prices-section {
   width: 1280px;
   height: 718px;
-  background-color: rgba(17, 19, 25, 1);
-  background-image: url(../images/prices.jpeg);
+  background-image: linear-gradient(
+      rgba(17, 19, 25, 0.8),
+      rgba(17, 19, 25, 0.8)
+    ),
+    url(../images/prices.jpeg);
+  background-color: rgba(
+    17,
+    19,
+    25,
+    1
+  ); /* Задаємо прозорість 20% через rgba() значення */
   background-size: cover;
+  position: relative;
 }
 
 .service-item {
@@ -430,13 +451,23 @@ aside {
 
 .service-item {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .prices-section button {
   margin-top: 50px;
   margin-left: 569px;
   margin-bottom: 130px;
+}
+
+.service::after {
+  display: inline-block;
+  margin: 0px 6px 0px 6px;
+  width: 1px;
+  height: 1px;
+  background-color: var(--secondary-transparent-text);
+  content: '';
 }
 
 /* Third section*/
@@ -598,20 +629,16 @@ aside {
 
 .social-link {
   align-self: center;
-  background-color: var(--primary-backround-color);
-}
-
-.social-link:hover {
-  fill: var(--brand-color);
-}
-
-.social-icon {
-  display: flex;
-  align-self: center;
 }
 
 .social-icon:hover {
   color: var(--brand-color);
+}
+
+.social-icon {
+  display: flex;
+  width: 20px;
+  fill: #ff6c00;
 }
 
 /* work section*/
